@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コハクラフトログ サポート</title>
+<style>
+  :root {
+    --base: #FAF6EE;
+    --primary: #D99100;
+    --accent: #4A2C1A;
+    --text-primary: #2B2118;
+    --text-secondary: #7A6F5F;
+    --border: #E5DECF;
+    --surface: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+    background: var(--base);
+    color: var(--text-primary);
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 28px; margin: 0 0 8px; color: var(--accent); }
+  h2 { font-size: 20px; margin: 40px 0 12px; color: var(--accent); border-left: 4px solid var(--primary); padding-left: 12px; }
+  h3 { font-size: 16px; margin: 24px 0 8px; color: var(--text-primary); }
+  p, li { font-size: 15px; color: var(--text-primary); }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .meta { color: var(--text-secondary); font-size: 13px; }
+  .faq-q { font-weight: 600; margin-top: 20px; color: var(--text-primary); }
+  .faq-a { margin: 4px 0 16px; color: var(--text-primary); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 13px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0 32px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>コハクラフトログ サポート</h1>
+    <p class="meta">ビールの味わいを記録する、ローカル完結のパーソナルノート</p>
+  </header>
+
+  <div class="card">
+    <p>コハクラフトログ（BeerLog）をご利用いただきありがとうございます。<br>
+    このページでは、よくある質問と問い合わせ先をご案内します。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+
+  <p class="faq-q">Q. データはどこに保存されますか？</p>
+  <p class="faq-a">A. すべて iPhone 本体に保存されます。外部サーバーへの送信は一切行いません。</p>
+
+  <p class="faq-q">Q. アカウント登録は必要ですか？</p>
+  <p class="faq-a">A. 必要ありません。アプリをインストールして年齢確認をすれば、すぐに使い始められます。</p>
+
+  <p class="faq-q">Q. データをバックアップしたい</p>
+  <p class="faq-a">A. 設定画面の「バックアップをエクスポート」から、全データを zip 形式で書き出せます。書き出した zip は共有シート経由で iCloud Drive やファイルアプリ等に保存できます。</p>
+
+  <p class="faq-q">Q. 機種変更で引き継ぎたい</p>
+  <p class="faq-a">A. 以下の 2 つの方法があります。<br>
+  1. iPhone の iCloud バックアップが有効な場合、新しい端末に自動的に引き継がれます。<br>
+  2. 設定画面で zip バックアップを作成し、新しい端末で「バックアップを復元」から読み込むこともできます。</p>
+
+  <p class="faq-q">Q. 写真はどこに保存されますか？</p>
+  <p class="faq-a">A. アプリ専用のディレクトリ内に保存されます。iPhone の写真アプリ（ライブラリ）には保存されません。</p>
+
+  <p class="faq-q">Q. データを完全に削除したい</p>
+  <p class="faq-a">A. 設定画面の「すべてのデータを削除」から可能です。また、アプリをアンインストールしても端末内のデータは削除されます。</p>
+
+  <p class="faq-q">Q. 年齢確認をやり直したい</p>
+  <p class="faq-a">A. 20歳以上での利用が確認されると再表示されません。端末変更または再インストールで初期化されます。</p>
+
+  <p class="faq-q">Q. フレーバータグを整理したい</p>
+  <p class="faq-a">A. 設定 →「フレーバータグの管理」から、カスタムタグの改名・削除・統合ができます。</p>
+
+  <p class="faq-q">Q. 通信は発生しますか？</p>
+  <p class="faq-a">A. 発生しません。完全オフラインで動作します。機内モードでも全機能が利用可能です。</p>
+
+  <p class="faq-q">Q. 広告は表示されますか？</p>
+  <p class="faq-a">A. 表示されません。本アプリに広告機能はありません。</p>
+
+  <p class="faq-q">Q. Android 版はありますか？</p>
+  <p class="faq-a">A. 現時点では iOS 版のみの提供です。</p>
+
+  <h2>動作環境</h2>
+  <ul>
+    <li>iOS 16.0 以降</li>
+    <li>iPhone（iPad 専用レイアウトは未対応）</li>
+  </ul>
+
+  <h2>不具合の報告・要望</h2>
+  <p>以下のメールアドレスまでご連絡ください。</p>
+  <div class="card">
+    <p><strong>メール：</strong><a href="mailto:yowl.dev@gmail.com">yowl.dev@gmail.com</a></p>
+  </div>
+  <p>報告時には以下を添えていただけると助かります。</p>
+  <ul>
+    <li>iOS バージョン</li>
+    <li>アプリバージョン（設定画面下部に表示）</li>
+    <li>再現手順</li>
+  </ul>
+
+  <h2>プライバシーポリシー</h2>
+  <p><a href="./privacy.html">プライバシーポリシーはこちら</a></p>
+
+  <h2>免責事項</h2>
+  <ul>
+    <li>本アプリは個人開発のパーソナルツールです。</li>
+    <li>データ保全には iCloud バックアップと手動 zip バックアップの併用を推奨します。</li>
+    <li>本アプリは20歳以上の方を対象としています。節度ある飲酒を推奨します。</li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2026 コハクラフトログ</p>
+  </footer>
+</main>
+</body>
+</html>

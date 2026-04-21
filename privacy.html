@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コハクラフトログ プライバシーポリシー</title>
+<style>
+  :root {
+    --base: #FAF6EE;
+    --primary: #D99100;
+    --accent: #4A2C1A;
+    --text-primary: #2B2118;
+    --text-secondary: #7A6F5F;
+    --border: #E5DECF;
+    --surface: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+    background: var(--base);
+    color: var(--text-primary);
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 26px; margin: 0 0 8px; color: var(--accent); }
+  h2 { font-size: 19px; margin: 36px 0 12px; color: var(--accent); border-left: 4px solid var(--primary); padding-left: 12px; }
+  p, li { font-size: 15px; color: var(--text-primary); }
+  a { color: var(--primary); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .meta { color: var(--text-secondary); font-size: 13px; }
+  ul { padding-left: 20px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0 20px;
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 14px;
+  }
+  th { background: var(--base); color: var(--accent); }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 13px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+  .en { margin-top: 40px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">アプリ名：コハクラフトログ（BeerLog） ／ 最終更新日：2026年4月21日</p>
+  </header>
+
+  <p>本プライバシーポリシーは、コハクラフトログ（以下「本アプリ」）における利用者情報の取扱いについて説明するものです。</p>
+
+  <h2>1. 収集する情報</h2>
+  <p>本アプリは、利用者の個人情報を <strong>一切収集しません</strong>。</p>
+  <ul>
+    <li>アカウント登録はありません</li>
+    <li>サーバーへのデータ送信はありません</li>
+    <li>解析・計測ツール（Google Analytics、Firebase Analytics 等）は組み込んでいません</li>
+    <li>広告 SDK は組み込んでいません</li>
+    <li>クラッシュレポートの自動送信は行いません</li>
+  </ul>
+
+  <h2>2. 端末内に保存される情報</h2>
+  <p>以下の情報は、利用者の iPhone 端末内にのみ保存されます。開発者を含む第三者に送信されることはありません。</p>
+  <ul>
+    <li>ビールの記録情報（銘柄名、スタイル、ABV、評価、味覚スライダー値、メモ、購入場所、購入形態）</li>
+    <li>醸造所情報（名称、お気に入りフラグ、記録回数）</li>
+    <li>フレーバータグ</li>
+    <li>利用者がアプリ内で追加した写真</li>
+    <li>年齢確認の実施日時、ツアーの既読フラグ</li>
+  </ul>
+  <p>保存先：iOS の Documents ディレクトリ配下（SQLite データベース、および写真ファイル）</p>
+
+  <h2>3. 端末権限の利用</h2>
+  <p>本アプリは、以下の権限のみを必要に応じて利用します。</p>
+  <table>
+    <thead>
+      <tr><th>権限</th><th>利用目的</th><th>必須</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>写真ライブラリ</td><td>利用者が記録に添付する写真を選択するため</td><td>任意</td></tr>
+      <tr><td>カメラ</td><td>記録に添付する写真をその場で撮影するため</td><td>任意</td></tr>
+    </tbody>
+  </table>
+  <p>以下の権限は <strong>使用しません</strong>：</p>
+  <ul>
+    <li>位置情報</li>
+    <li>マイク</li>
+    <li>連絡先</li>
+    <li>カレンダー</li>
+    <li>Bluetooth</li>
+    <li>モーションセンサー</li>
+    <li>トラッキング（IDFA）</li>
+  </ul>
+
+  <h2>4. iCloud バックアップ</h2>
+  <p>iOS 標準の iCloud バックアップが有効な場合、本アプリのデータ（Documents 配下の SQLite ファイルおよび写真）は Apple の iCloud サーバーにバックアップされることがあります。これは iOS の標準動作であり、本アプリが独自に行う送信ではありません。iCloud に保存されたデータの取扱いについては、Apple のプライバシーポリシーに従います。</p>
+
+  <h2>5. 手動バックアップ</h2>
+  <p>利用者は設定画面から、全データを zip 形式で書き出すことができます。書き出した zip ファイルの保存先・共有先（iCloud Drive、メール、AirDrop 等）は利用者自身が選択します。本アプリから外部サーバーへ自動送信することはありません。</p>
+
+  <h2>6. 子どものプライバシー</h2>
+  <p>本アプリは日本の法令（未成年者飲酒禁止法）および App Store Review Guideline 1.4.3 に従い、20歳未満の利用を想定していません。初回起動時に年齢確認を行い、20歳未満が選択された場合はアプリの利用を制限します。</p>
+
+  <h2>7. データの削除</h2>
+  <p>利用者は、以下の方法でアプリ内のデータを削除できます。</p>
+  <ul>
+    <li>個別記録の削除：記録詳細画面から削除</li>
+    <li>全データの削除：設定画面の「データを削除」メニュー</li>
+    <li>アプリのアンインストール：iOS 標準操作でアプリを削除すると、端末内データも削除されます</li>
+  </ul>
+
+  <h2>8. 第三者への提供</h2>
+  <p>本アプリは利用者の情報を収集していないため、第三者に提供することもありません。</p>
+
+  <h2>9. ポリシーの変更</h2>
+  <p>本プライバシーポリシーは、必要に応じて改訂することがあります。改訂時は本ページの最終更新日を更新します。</p>
+
+  <h2>10. お問い合わせ</h2>
+  <div class="card">
+    <p><strong>メール：</strong><a href="mailto:yowl.dev@gmail.com">yowl.dev@gmail.com</a></p>
+    <p><strong>サポートページ：</strong><a href="./index.html">こちら</a></p>
+  </div>
+
+  <div class="en">
+    <strong>English Summary</strong><br>
+    This app does not collect, transmit, or share any personal information. All records are stored locally on your device. The app does not use any analytics, advertising, or tracking SDKs. Photo library and camera permissions are used only when you choose to attach photos. For details, refer to the Japanese text above. Contact: yowl.dev@gmail.com
+  </div>
+
+  <footer>
+    <p>&copy; 2026 コハクラフトログ</p>
+  </footer>
+</main>
+</body>
+</html>
